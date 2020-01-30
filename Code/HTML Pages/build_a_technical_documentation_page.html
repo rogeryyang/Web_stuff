@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <style>
+    .main-section{
+      padding: 10px 20% 100px 15px;
+      font-size: 20px;
+      margin: 0px 0px 0px 190px; 
+      border-style: solid;
+      border-width: 0px 0px 1px 0px;
+      color: #383838;
+    }
+    .main-section code{
+      font: courier;
+      font-size: 17px;
+      background: lightgray;
+      padding: 20px;
+      margin: 50px 10px 10px 10px;
+      width: 80%;
+      display: block;
+      color: black;
+    }
+    #navbar{
+      background: lightgray;
+      height: 100%;
+      width: 190px;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+    #nav-links{
+      list-style-type: none;
+      padding: 0px;
+      border-style: solid;
+      border-width: 0px 0px 1px 0px;
+    }
+
+    #nav-links li{
+      font-family: sans-serif; 
+      padding: 10px 15px 10px;
+      border-style: solid;
+      border-width: 1px 0px 0px 0px;
+    }
+    #nav-links li a{
+      text-decoration: none;
+      color: black;
+    }
+    #nav-links li:hover{
+      background: darkgray;
+    }
+    .main-section header{
+      font-size: 115%;
+      font-weight: bold;
+    }
+    #navbar header{
+      font-size: x-large;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+    @media only screen and (max-width: 800px){
+      .main-section{
+        padding: 10px 0px 100px 15px;
+        margin: 0px 0px 0px 150px;
+        font-size: 18px;
+      }
+      #navbar{
+        width: 150px;
+      }
+      #navbar header{
+        font-size: large;
+        font-weight: bold;
+        padding: 10px 15px;
+      }
+      #nav-links li{
+        font-size: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- page contents -->
+  <div id="container">
+  <nav id="navbar">
+    <header>Topic of the technical documentation</header>
+    <ul id="nav-links">
+      <li><a class="nav-link" href="#header_text_1">Header Text 1</a></li>
+      <li><a class="nav-link" href="#header_text_2">Header Text 2</a></li>
+      <li><a class="nav-link" href="#header_text_3">Header Text 3</a></li>
+      <li><a class="nav-link" href="#header_text_4">Header Text 4</a></li>
+      <li><a class="nav-link" href="#header_text_5">Header Text 5</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+
+    <section class="main-section" id="header_text_1">
+      <header>Header Text 1</header>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis nibh id cursus placerat. Aliquam quam nunc, condimentum vitae lacinia et, commodo at odio. Donec elementum sapien eu orci congue, ut molestie elit pellentesque. Nunc iaculis molestie ipsum et condimentum. In accumsan felis nulla, fermentum faucibus lectus viverra sit amet. Suspendisse id mi neque. Sed vulputate nisl non nisl pulvinar varius. Sed dictum velit mauris, ut vestibulum turpis dictum quis.</p>
+      <p>Proin facilisis quis nunc sed facilisis. Ut ac commodo ligula, non ornare dolor. Aenean imperdiet ultrices vestibulum. Mauris nec sollicitudin magna. Aliquam placerat pharetra orci. Sed sit amet lacinia nunc, non sagittis mauris. Fusce varius nulla quam, molestie porta odio vehicula iaculis. Phasellus sapien velit, blandit id fermentum vitae, lacinia in nibh. Proin facilisis purus eget dolor pellentesque sollicitudin. Quisque blandit magna nec dui maximus, ut auctor tortor luctus. Nam et pulvinar nisl, eu efficitur ligula. Duis neque orci, placerat nec nibh sed, pulvinar dictum libero. Mauris consequat fermentum justo, sit amet ornare turpis pretium vel. Nam maximus malesuada malesuada.</p>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+      </ul>
+      <code>
+        x+y=3
+        x+1=2
+      </code>
+    </section>
+
+    <section class="main-section" id="header_text_2">
+        <header>Header Text 2</header>
+        <p>Praesent molestie massa vitae egestas tincidunt. Nulla non felis viverra, venenatis libero eget, elementum lectus. Ut eu sollicitudin purus. Donec a facilisis lacus. Proin euismod a justo sit amet faucibus. Mauris et convallis augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel vestibulum risus, nec feugiat eros. Sed eleifend tincidunt elementum. Etiam consequat rhoncus massa id dignissim. Aenean ornare scelerisque ex, et iaculis diam congue a. Integer massa ipsum, finibus ut fringilla et, fermentum nec odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>Quisque ultrices eget augue vitae semper. Mauris hendrerit neque et nunc eleifend scelerisque. Curabitur luctus vitae dui nec egestas. Sed feugiat dapibus sem in pulvinar. Mauris rutrum massa sit amet mi mollis, at tristique sem venenatis. Donec in tortor dictum diam porttitor rutrum. Nulla vulputate dolor at lectus consequat, sed efficitur neque convallis. Nam non maximus nunc, ac molestie nibh. Aenean ut euismod dolor.</p>
+        <code>
+          x+y=3
+          x+1=2
+        </code>
+    </section>
+      
+    <section class="main-section" id="header_text_3">
+        <header>Header Text 3</header>
+        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc interdum odio vehicula, lobortis ante eget, fermentum augue. In ut tortor libero. Praesent maximus sagittis facilisis. Praesent et magna in neque imperdiet cursus quis sed est. Fusce pulvinar nulla ac elit ultrices feugiat. Integer nec placerat lorem. Cras lacinia, dolor vitae tristique varius, dolor erat efficitur libero, lacinia iaculis arcu nulla ac quam.</p>
+        <p>Praesent luctus sem a mi tempus gravida vel nec ligula. Praesent convallis consequat ultrices. Suspendisse vulputate feugiat augue, id viverra lorem bibendum mattis. Suspendisse at metus nec justo tincidunt tristique. Proin nec magna laoreet, dapibus enim eu, porttitor tortor. Aliquam convallis ex eu augue volutpat, in euismod nisi semper. Nulla volutpat lorem ac est egestas pellentesque.</p>
+        <code>
+          x+y=3
+          x+1=2
+        </code>
+    </section>
+
+    <section class="main-section" id="header_text_4">
+        <header>Header Text 4</header>
+        <p>Suspendisse viverra dictum odio vitae vulputate. Fusce tempus convallis dignissim. Vivamus nec libero pretium, rutrum nulla vitae, egestas lacus. Sed vehicula odio ac justo condimentum venenatis. Curabitur feugiat faucibus lobortis. Duis bibendum cursus vestibulum. Nulla pretium feugiat pellentesque. Nulla vel mauris sed mi blandit pretium. Phasellus ac suscipit felis, non elementum diam. Sed ante urna, bibendum et ante non, laoreet gravida felis. Aliquam vel libero a sem dictum cursus.</p>
+        <p>Mauris pellentesque ultrices vulputate. Vivamus sed sollicitudin lacus. Nam laoreet nunc aliquet dui eleifend, volutpat tristique erat mattis. Nam sit amet placerat justo. Nulla eleifend dictum odio, vitae molestie sapien ultrices a. Pellentesque dignissim aliquet sapien nec viverra. Phasellus venenatis dui ac blandit tincidunt. Praesent sit amet fermentum nisi, sed interdum libero. Nunc bibendum lectus quis odio auctor, lobortis finibus risus congue. Donec finibus eros eget velit vehicula faucibus. Pellentesque consectetur lorem et orci porttitor, sed commodo arcu vulputate. Vivamus mi purus, luctus sit amet lorem at, molestie mattis odio. Donec ac risus massa.</p>
+        <code>
+          x+y=3
+          x+1=2
+        </code>
+    </section>
+
+    <section class="main-section" id="header_text_5">
+        <header>Header Text 5</header>
+        <p>Aenean vel semper justo. Donec sodales lacinia enim non viverra. Suspendisse feugiat dui eget mi iaculis, et elementum mauris ullamcorper. Quisque interdum neque vel dui condimentum, ac elementum nunc lobortis. Phasellus consequat dapibus nunc vel rhoncus. Aenean tempus non nibh in rutrum. Nam sed semper neque, in efficitur ante. Proin et ante eu orci suscipit semper.</p>
+        <p>Nullam vitae turpis eros. In iaculis tristique sem varius lacinia. Vestibulum suscipit tincidunt ligula, ut condimentum leo mollis vel. Donec faucibus nisi ac tortor commodo mattis. Fusce ac gravida felis, non lacinia justo. Nulla at malesuada diam, vitae porta leo. Nam congue hendrerit ipsum ut luctus. Proin efficitur pellentesque ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam vel enim libero. Praesent cursus maximus dolor, tempus commodo lectus varius sit amet. In laoreet tellus nec magna scelerisque efficitur. Sed rhoncus pulvinar faucibus. Praesent convallis fringilla mi non hendrerit. Maecenas vel turpis molestie, volutpat risus at, consectetur nisi. Maecenas bibendum velit lectus, sit amet accumsan nunc lacinia vitae.</p>
+        <code>
+          x+y=3
+          x+1=2
+        </code>
+    </section>
+  </div>
+  </main>
+</body>
+
+</html>

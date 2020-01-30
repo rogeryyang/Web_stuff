@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- metadata elements -->
+  <meta charset="UTF-8" />
+  <title>Roger Yang - Welcome to My Portfolio</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Tangerine&display=swap');
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    #welcome{
+      background: #888;
+      width: 100%;
+      height: 100vh;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #navbar{
+      position: fixed;
+      width: 100%;
+      background: #975368;
+      top: 0px;
+      right: 0px;
+      z-index: 1;
+    }
+    #nav-list{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      margin: 0px 10px;
+    }
+    #nav-list li{
+      display: inline;
+      float: left;
+    }
+    #nav-list li a{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      display: block;
+      color: #F7F6F4;
+      text-align: center;
+      padding: 18px 20px;
+      text-decoration: none;
+    }
+    #nav-list li a:hover{
+      background: #444;
+      text-decoration: underline;
+    }
+    main{
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    #welcome-section{
+      background: #1C1C20;
+      height: 100vh;
+      text-align: center;
+      margin-top: -30px;
+      padding-bottom: 30px;
+    }
+    #welcome-div{
+      color: #F7F6F4;
+    }
+    #welcome-div h1{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      font-size: 100px;
+      margin-bottom: 0px;
+      padding-top: 30vh;
+    }
+    #welcome-div p{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      font-size: 30px;
+    }
+    #projects{
+      background: #857D9A;
+      min-height: 100vh;
+      height: auto;
+      margin-top: -20px;
+      margin-bottom: -19px;
+    }
+    #projects-div{
+      padding: 100px 30px 70px;
+    }
+    #projects h2{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #F7F6F4;
+      text-align: center;
+      font-size: 30px;
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+    .project-group{
+      max-width: 1250px; //sets the limit to 3 items per row
+      padding: 5px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0 auto; //centers the box
+    }
+    .project-tile{
+      flex-basis: 400px;
+      height: 400px;
+      background: #404553;
+      padding: 0;
+      margin: 5px;
+    }
+    .project-tile a{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-size: 20px;
+      color: #F7F6F4;
+    }
+    #contact{
+      background: #1C1C20;
+      height: 100vh;
+      text-align: center;
+    }
+    #contact-div{
+      padding-top: 43vh;
+    }
+    #contact-div h3{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      color: #F7F6F4;
+      font-size: 35px;
+    }
+    #contact-div a{
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-size: 25px;
+      color: #F7F6F4;
+    }
+    #contact-div a:hover{
+      text-decoration: underline;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
+  </style>
+</head>
+
+<body>
+  <!-- page contents -->
+  <nav id="navbar">
+      <!-- navigation stuff goes here -->
+      <ul id="nav-list">
+        <li class="nav-link"><a href="#welcome-section">About</a></li>
+        <li class="nav-link"><a href="#projects">Work</a></li>
+        <li class="nav-link"><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+ 
+  <main>
+      <section id="welcome-section">
+        <div id="welcome-div">
+        <h1>Roger Yang</h1>
+        <p>Web Development | Automation</p>
+      </div>
+      </section>
+
+
+      <section id="projects">
+        <div id="projects-div">
+        <h2>Projects</h2>
+          <div class="project-group">
+            <div class="project-tile">
+              <a href="#">
+              <h3 class="project-name">Project name</h3>
+              </a>
+            </div>
+            <div class="project-tile">
+              <a href="#">
+              <h3 class="project-name">Project name</h3>
+              </a>
+            </div>
+            <div class="project-tile">
+              <a href="#">
+              <h3 class="project-name">Project name</h3>
+              </a>
+            </div>
+            <div class="project-tile">
+                <a href="#">
+                <h3 class="project-name">Project name</h3>
+                </a>
+              </div>
+              <div class="project-tile">
+                <a href="#">
+                <h3 class="project-name">Project name</h3>
+                </a>
+              </div>
+              <div class="project-tile">
+                <a href="#">
+                <h3 class="project-name">Project name</h3>
+                </a>
+              </div>
+              <div class="project-tile">
+                  <a href="#">
+                  <h3 class="project-name">Project name</h3>
+                  </a>
+              </div>
+          </div>
+
+      </div>
+      </section>
+
+
+      <section id="contact">
+        <div id="contact-div">
+          <h3>Contact Links:</h3>
+          <a id="profile-link" target="_blank" href="https://github.com/rogeryyang/learning">Github</a>
+        </div>
+      </section>
+    <!-- articles and sections go here -->
+    <!-- articles are self contained compositions that are independently distributable or reuseable -->
+    <!-- section is generic section of a document or application. Or thematic grouping of content, typically with a heading.-->
+  </main>
+</body>
+
+</html>
