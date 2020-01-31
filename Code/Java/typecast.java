@@ -1,4 +1,4 @@
-class Demo {
+class Demo_old_1 {
  public static void main(String args[]) {
   byte x;
   int a = 270;
